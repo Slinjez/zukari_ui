@@ -1,0 +1,61 @@
+.zukari-phone-input {
+  --PhoneInput-color--focus: #866000;
+  --PhoneInputCountryFlag-height: 17px;
+  --PhoneInputCountrySelectArrow-color: #866000;
+  --PhoneInputCountrySelectArrow-opacity: 0.75;
+
+  min-height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #eadfca;
+  border-radius: 14px;
+  background: #fff7ea;
+  padding: 0 12px;
+  color: #24160c;
+  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.zukari-phone-input:focus-within {
+  border-color: #866000;
+  background: #fffaf5;
+  box-shadow: 0 0 0 4px rgba(134, 96, 0, 0.12);
+}
+
+.zukari-phone-input.is-invalid {
+  border-color: #b74b35;
+  background: #fff3ef;
+}
+
+.zukari-phone-input .PhoneInputCountry {
+  margin: 0;
+  gap: 7px;
+}
+
+.zukari-phone-input .PhoneInputCountrySelect {
+  cursor: pointer;
+}
+
+.zukari-phone-input .PhoneInputCountryIcon {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(36, 22, 12, 0.12);
+}
+
+.zukari-phone-input .PhoneInputInput {
+  min-width: 0;
+  height: 46px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #24160c;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.zukari-phone-input .PhoneInputInput::placeholder {
+  color: rgba(94, 74, 53, 0.62);
+  font-weight: 700;
+}

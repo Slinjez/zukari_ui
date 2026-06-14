@@ -1,0 +1,27 @@
+npm create vite@latest zukari -- --template react
+cd zukari
+npm install
+
+src/App.jsx
+
+--web
+npm run dev
+
+--capacitor
+npm install @capacitor/core @capacitor/cli @capacitor/android
+npx cap init Zukari com.boss.zukari --web-dir=dist
+
+--android studio
+
+npm run build
+npm install @capacitor/core @capacitor/cli @capacitor/android
+npx cap init Zukari com.boss.zukari --web-dir=dist
+npx cap add android
+npx cap sync android
+npx cap open android
+
+--after file update 
+npm run build
+npx cap sync android
+
+ 
